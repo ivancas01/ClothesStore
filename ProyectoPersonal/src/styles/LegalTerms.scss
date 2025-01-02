@@ -1,0 +1,37 @@
+
+.titleLegalTerms{
+    @media (max-width: 1200px ), screen and (orientation: portrait) {
+        text-align: center;
+        font-size: 2.3rem;
+    }
+}
+.legalTerms{
+    @media (max-width: 1200px ), screen and (orientation: portrait) {
+        width: 90vw;
+    }
+    width: 60vw;
+    margin: auto;
+    &Title{
+        @media (max-width: 1200px ), screen and (orientation: portrait) {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        text-align: left;
+        font-size: 2.1rem;
+        margin: auto;
+        color: #2c2c2c;
+    }
+    &SubTitle{
+        text-align: left;
+        font-size: 1.8rem;
+    }
+    &Desc{
+        @media (max-width: 1200px ), screen and (orientation: portrait) {
+            font-size: 1rem;
+        }
+        text-align: justify;
+        font-size: 1.2rem;
+        color: #5f5f5f;
+        margin: 10px 20px 60px 20px;
+    }
+}

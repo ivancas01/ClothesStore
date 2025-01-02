@@ -1,0 +1,16 @@
+.indexPage{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ffffff;
+    padding: 0px;
+    text-align: center;
+    &Social{
+        font-size: 2rem;
+        color: #333333;
+        margin: auto;
+    }
+    &Text{
+        margin-bottom: 120px;
+    }
+}

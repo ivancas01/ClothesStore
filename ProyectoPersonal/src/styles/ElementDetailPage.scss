@@ -1,0 +1,143 @@
+.elementDetail{
+    display: grid;
+    margin: 40px 20px 20px 20px;
+    @media (max-width: 1200px ), screen and (orientation: portrait) {
+        h2{
+            font-size: 2.3rem !important;
+        }
+    }
+    &Title{
+        font-size: 3.5rem;
+        margin: auto;
+    }
+    &Box{
+        margin: 0px 10px 100px 10px;
+        @media (max-width: 1200px ), screen and (orientation: portrait) {
+            grid-template-columns: 1fr;
+            margin: 10px 10px 100px 10px;
+            height: auto;
+            &Image{
+                height: 50vh !important;
+                img{
+                    width: 300px !important;
+                }
+            }
+        }
+        border: 3px solid #000000;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-self: center;
+        width: 95%;
+        height: 750px;
+        &Image{
+            height: 750px;
+            overflow: hidden;
+            overflow-y: scroll;
+            background: #ffffff;
+            display: grid;
+            justify-content: center;
+            img{
+                width: 700px;
+                transition: transform 0.25s;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        &Info{
+            @media (max-width: 1200px ), screen and (orientation: portrait) {
+                &Data{
+                    img{
+                        width: 150px !important;
+                    }
+                    .name{
+                        font-size: 2rem !important;
+                    }
+                    .gender{
+                        font-size: 1.3rem !important;
+                    }
+                    .price{
+                        font-size: 1.3rem !important;
+                    }
+                    .size{
+                        font-size: 1.3rem !important;
+                    }
+                }
+            }
+            background: #000000;
+            padding: 40px;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            &Data{
+                img{
+                    width: 280px;
+                    opacity: .9;
+                    border: 3px solid #ffffff;
+                }
+                text-align: center;
+                width: auto;
+                .name{
+                    margin: 10px;
+                    font-size: 2.5rem;
+                }
+                .gender{
+                    margin: 5px;
+                    font-size: 1.5rem;
+                }
+                .price{
+                    margin: 5px;
+                    font-size: 1.5rem;
+                }
+                .size{
+                    margin: 5px;
+                    font-size: 1.5rem;
+                }
+                .Hr{
+                    width: 90%;
+                    border: 1px solid #c4c4c477;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+                &Buttons{
+                    @media (max-width: 1200px ), screen and (orientation: portrait) {
+                        display: grid;
+                    }
+                    margin: 50px 10px 0px 10px;
+                    display: flex;
+                    justify-content: center;
+                    .buyByWhatsapp{
+                        color: #ffffff;
+                        border: 1px solid transparent;
+                        padding: 12px 15px;
+                        font-size: 1.5rem;
+                        background-color: #1c8f46;
+                        cursor: pointer;
+                        transition: all 0.25s;
+                        &:hover {
+                            background-color: #25D366 ;
+                        }
+                    }
+                    // .buyByInstagram{
+                    //     color: #ffffff;
+                    //     border: 1px solid transparent;
+                    //     padding: 12px 15px;
+                    //     font-size: 1.3rem;
+                    //     background-color: #c4c4c4;
+                    //     cursor: pointer;
+                    //     transition: all 0.25s;
+                    //     &:hover {
+                    //         background-color: #C13584;
+                    //     }
+                    // }
+                }
+                &SoldOut{
+                    h2{
+                        color: #ff4d4d;
+                        text-shadow: 0px 0px 12px rgb(202, 58, 58);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.socialNetworks{
+    @media screen and (orientation: portrait) {
+        grid-template-columns: repeat(1,1fr);
+        height: auto !important;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto !important;
+    text-align: center;
+    
+    &Instagram{
+        display: grid;
+        
+        .aSocialNetwork{
+            align-self: center;
+            text-decoration: none;
+            color: #6d6a6a;
+            font-size: 1.5rem !important;
+            transition: all .2s;
+        }
+        &:hover{
+            background: #C13584 ;
+            .aSocialNetwork{
+                color: #ffffff;
+                align-self: center;
+                text-decoration: none;
+                font-size: 1.5rem;
+                letter-spacing: 3px;
+                text-shadow: 0px 5px 20px #fdfdfd;
+            }
+        }
+    }
+    &Facebook{
+        display: grid;
+        .aSocialNetwork{
+            align-self: center;
+            text-decoration: none;
+            color: #6d6a6a;
+            font-size: 1.5rem !important;
+            transition: all .2s;
+        }
+        &:hover{
+            background: #3b5998 ;
+            .aSocialNetwork{
+                color: #ffffff;
+                align-self: center;
+                text-decoration: none;
+                font-size: 1.5rem;
+                letter-spacing: 3px;
+                text-shadow: 0px 5px 20px #fdfdfd;
+            }
+        }
+    }
+    &X{
+        display: grid;
+        .aSocialNetwork{
+            align-self: center;
+            text-decoration: none;
+            color: #6d6a6a;
+            font-size: 1.5rem !important;
+            transition: all .2s;
+        }
+        &:hover{
+            background: #00acee ;
+            .aSocialNetwork{
+                color: #ffffff;
+                align-self: center;
+                text-decoration: none;
+                font-size: 1.5rem;
+                letter-spacing: 3px;
+                text-shadow: 0px 5px 20px #fdfdfd;
+            }
+        }
+    }
+    &Whatsapp{
+        display: grid;
+        .aSocialNetwork{
+            align-self: center;
+            text-decoration: none;
+            color: #6d6a6a;
+            font-size: 1.5rem !important;
+            transition: all .2s;
+        }
+        &:hover{
+            background: #25D366;
+            .aSocialNetwork{
+                color: #ffffff;
+                align-self: center;
+                text-decoration: none;
+                font-size: 1.5rem;
+                letter-spacing: 3px;
+                text-shadow: 0px 5px 20px #fdfdfd;
+            }
+        }
+    }
+    &Tiktok{
+        display: grid;
+        .aSocialNetwork{
+            align-self: center;
+            text-decoration: none;
+            color: #6d6a6a;
+            font-size: 1.5rem !important;
+            transition: all .2s;
+        }
+        &:hover{
+            background: #1a1919;
+            .aSocialNetwork{
+                color: #ffffff;
+                align-self: center;
+                text-decoration: none;
+                font-size: 1.5rem;
+                letter-spacing: 3px;
+                text-shadow: 0px 5px 20px #fdfdfd;
+            }
+        }
+    }
+}

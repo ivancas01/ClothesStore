@@ -1,147 +1,154 @@
-.drops{
-    margin-bottom: 70px !important;
-    .viewMoreElements{
-        margin-top: 40px;
-        a:hover{
-            text-decoration: underline;
-        }
+.drops {
+  margin-bottom: 70px !important;
+  .viewMoreElements {
+    margin-top: 40px;
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  display: grid;
+  &Hr {
+    width: 58%;
+    border: 2px solid #b9b9b9;
+    margin-bottom: 30px;
+  }
+  &HrTwo {
+    width: 80%;
+    border: 1px solid #e6e5e5;
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+  &Title {
+    @media (max-width: 1200px), screen and (orientation: portrait) {
+      text-align: center;
+      font-size: 2.3rem;
+    }
+  }
+  &Description {
+    color: #5e5e5e;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+  }
+  &Img {
+    justify-self: center;
+    img {
+      border: 3px solid #000000;
+      width: 300px;
+      margin: 30px;
+    }
+  }
+  .elements {
+    @media (max-width: 1200px), screen and (orientation: portrait) {
+      grid-template-columns: 1fr;
     }
     display: grid;
-    &Hr{
-        width: 58%;
-        border: 2px solid #b9b9b9;
-        margin-bottom: 30px;
-    }
-    &HrTwo{
-        width: 80%;
-        border: 1px solid #e6e5e5;
-        margin-bottom: 0px;
-        margin-top: 30px;
-    }
-    &Title{
-        @media (max-width: 1200px ), screen and (orientation: portrait) {
-            text-align: center;
-            font-size: 2.3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    width: min-content;
+    background-color: #ffffff;
+    text-align: center;
+    &Unique {
+      @media (orientation: portrait) {
+        width: 280px;
+      }
+      padding: 20px;
+      margin: 30px;
+      width: 350px;
+      height: auto;
+      background-color: #3f3f3f;
+      transition: all 200ms;
+      cursor: pointer;
+
+      color: #ffffff;
+      img {
+        @media (orientation: portrait) {
+          max-width: 270px;
+          min-width: 270px;
+
+          min-height: 270px;
+          max-height: 2700px;
         }
-    }
-    &Description{
-        color: #5e5e5e;
+        min-width: 350px;
+        max-width: 350px;
+
+        min-height: 350px;
+        max-height: 350px;
+
+        object-fit: cover;
+      }
+      &DropName {
         margin: auto;
-        width: 70%;
-        text-align: center;
-    }
-    &Img{
-        justify-self: center;
-        img{
-            border: 3px solid #000000;
-            width: 300px;
-            margin: 30px;
-        }
-    }
-    .elements{
-        @media (max-width: 1200px ), screen and (orientation: portrait) {
-            grid-template-columns:1fr;
-        }
-        display: grid;
-        grid-template-columns:1fr 1fr 1fr;
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+        text-align: end;
+      }
+      &Name {
+        margin: 10px;
+        font-size: 1.8rem;
+      }
+      &Sold {
+        margin: 10px;
+        font-size: 1.8rem;
+        color: #ff4d4d;
+        text-shadow: 0px 0px 12px rgb(202, 58, 58);
+      }
+
+      // &Gender{
+      //     margin: auto;
+      //     font-size: 1.3rem;
+      // }
+      &Size {
         margin: auto;
-        width: min-content;
-        background-color: #ffffff;
-        text-align: center;
-        &Unique{
-            @media (orientation: portrait) {
-                width: 280px;
-            }
-            padding: 20px;
-            margin: 30px;
-            width: 350px;
-            height: auto;
-            background-color: #3f3f3f;
-            transition: all 200ms;
-            cursor: pointer;
+        font-size: 1.3rem;
+      }
+      &Price {
+        margin: auto;
+        font-size: 1.3rem;
+      }
+      &:hover {
+        background-color: #000000;
+      }
+    }
+    &UniqueSoldOut {
+      @media (orientation: portrait) {
+        width: 280px;
+      }
 
-            color: #ffffff;
-            img{
-                @media (orientation: portrait) {
-                    width: 280px;
-                }
-                max-width: 350px;
-                object-fit: cover;
-            }
-            &DropName{
-                margin: auto;
-                font-size: .8rem;
-                letter-spacing: 3px;
-                text-align: end;
-            }
-            &Name{
-                margin: 10px;
-                font-size: 1.8rem;
-            }
-            &Sold{
-                margin: 10px;
-                font-size: 1.8rem;
-                color: #ff4d4d;
-                text-shadow: 0px 0px 12px rgb(202, 58, 58);
-            }
-            
-            // &Gender{
-            //     margin: auto;
-            //     font-size: 1.3rem;
-            // }
-            &Size{
-                margin: auto;
-                font-size: 1.3rem;
-            }
-            &Price{
-                margin: auto;
-                font-size: 1.3rem;
-            }
-            &:hover{
-                background-color: #000000;
-            }
+      padding: 20px;
+      margin: 30px;
+      width: 350px;
+      height: auto;
+      background-color: #3f3f3f;
+      transition: all 200ms;
+      cursor: initial;
+
+      transition: all 200ms;
+
+      color: #ffffff;
+      img {
+        @media (orientation: portrait) {
+          width: 280px;
         }
-        &UniqueSoldOut{
-            @media (orientation: portrait) {
-                width: 280px;
-            }
-
-            padding: 20px;
-            margin: 30px;
-            width: 350px;
-            height: auto;
-            background-color: #3f3f3f;
-            transition: all 200ms;
-            cursor: initial;
-
-            
-            
-            transition: all 200ms;
-
-            color: #ffffff;
-            img{
-                @media (orientation: portrait) {
-                    width: 280px;
-                }
-                max-width: 350px;
-                object-fit: cover;
-            }
-            &Name{
-                margin: auto;
-                font-size: 1.7rem;
-            }
-            &Gender{
-                margin: auto;
-                font-size: 1.3rem;
-            }
-            &Size{
-                margin: auto;
-                font-size: 1.3rem;
-            }
-            &Price{
-                margin: auto;
-                font-size: 1.3rem;
-            }
-        }
-    } 
+        max-width: 350px;
+        object-fit: cover;
+      }
+      &Name {
+        margin: auto;
+        font-size: 1.7rem;
+      }
+      &Gender {
+        margin: auto;
+        font-size: 1.3rem;
+      }
+      &Size {
+        margin: auto;
+        font-size: 1.3rem;
+      }
+      &Price {
+        margin: auto;
+        font-size: 1.3rem;
+      }
+    }
+  }
 }

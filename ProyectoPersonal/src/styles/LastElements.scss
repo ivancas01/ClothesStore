@@ -67,7 +67,7 @@
           min-width: 270px;
 
           min-height: 270px;
-          max-height: 2700px;
+          max-height: 270px;
         }
         min-width: 350px;
         max-width: 350px;
@@ -82,12 +82,15 @@
         font-size: 0.8rem;
         letter-spacing: 3px;
         text-align: end;
+        color: #ffffff;
       }
       &Name {
         margin: 10px;
         font-size: 1.8rem;
+        color: #ffffff;
       }
       &Sold {
+        color: #ffffff;
         margin: 10px;
         font-size: 1.8rem;
         color: #ff4d4d;
@@ -99,10 +102,12 @@
       //     font-size: 1.3rem;
       // }
       &Size {
+        color: #ffffff;
         margin: auto;
         font-size: 1.3rem;
       }
       &Price {
+        color: #ffffff;
         margin: auto;
         font-size: 1.3rem;
       }

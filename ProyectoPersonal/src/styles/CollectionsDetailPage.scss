@@ -1,0 +1,60 @@
+.collectionsList {
+  margin-bottom: 70px;
+  &H1 {
+    margin: auto;
+    margin-top: 30px;
+    @media (orientation: portrait) {
+      font-size: 2rem;
+    }
+  }
+  &Box {
+    @media (orientation: portrait) {
+      max-width: 100% !important;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    display: grid;
+    max-width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 16px; /* Espacio entre los elementos */
+    padding: 16px;
+    justify-items: center;
+    align-items: center;
+    &Item {
+      max-width: max-content;
+      padding: 16px;
+      background-color: #3f3f3f;
+      cursor: pointer;
+      transition: all 200ms;
+      &H2 {
+        color: #ffffff;
+        text-align: end;
+        font-size: 1rem;
+        margin: auto;
+        @media (orientation: portrait) {
+          font-size: 1.1rem;
+        }
+      }
+      &Img {
+        @media (orientation: portrait) {
+          max-width: 270px;
+          min-width: 270px;
+
+          min-height: 270px;
+          max-height: 270px;
+        }
+        min-width: 300px;
+        max-width: 300px;
+
+        min-height: 300px;
+        max-height: 300px;
+
+        object-fit: cover;
+      }
+      &:hover {
+        background-color: #000000;
+      }
+    }
+  }
+}
